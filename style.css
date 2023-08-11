@@ -49,13 +49,13 @@ div {
 }
 
 .welcomeText h1{
-    font-size: 75px;
+    font-size: 60px;
     font-weight: bold;
     color: black;
 }
 
 .welcomeText p{
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 10px;
     border-bottom: solid; 
 }
@@ -79,6 +79,11 @@ div {
 
 .bg-color2 {
     background-color: #ffffff;
+}
+
+/* Add margin between sections */
+.section-margin {
+    margin-bottom: 40px; /* Adjust the margin value as needed */
 }
 
 /***********************
