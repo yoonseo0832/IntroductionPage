@@ -30,7 +30,9 @@ div {
 #myContent{
     padding-right: 2rem;
 }
-
+.nav-item.active a {
+    color: white;
+}
 
 /***********************
         Cover 
