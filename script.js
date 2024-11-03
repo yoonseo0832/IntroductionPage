@@ -40,7 +40,12 @@ document.addEventListener("DOMContentLoaded", function(){
     });
     navLinks.forEach(function(link){
         link.addEventListener("click", function(){
-            nav
-        })
-    })
-})
+            navLinks.forEach((nav) => {
+                nav.classList.remove("active");
+                nav.style.color = "grey";
+            });
+            this.classList.add("active");
+            this.style.color = "blue";
+        });
+    });
+});

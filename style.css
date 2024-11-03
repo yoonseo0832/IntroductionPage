@@ -18,7 +18,9 @@ body {
 div {
     display: block;
 }
-
+section{
+    padding-top: 20px;
+}
 
 /***********************
         Navigation 
@@ -30,8 +32,11 @@ div {
 #myContent{
     padding-right: 2rem;
 }
-.nav-item.active a {
-    color: white;
+.navbar{
+    height: 70px;
+}
+header{
+    margin-top:70px;
 }
 
 /***********************
