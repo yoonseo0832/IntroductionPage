@@ -1,29 +1,14 @@
-document.addEventListener("DOMContentLoaded", function(){
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    function removeActiveClasses(){
-        navLinks.forEach((link) => {
-            link.classList.remove("active");
+const navItems = document.querySelectorAll('.nav-item');
+navItems.forEach(item => {
+    item.addEventListener('click', function(event){
+        navItems.forEach(nav => {
+            nav.style.color='';
         });
-    }
-    function addActiveClass(id){
-        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
-        if(activeLink){
-            activeLink.classList.add("active");
-        }
-    }
-    window.addEventListener("scoll", function(){
-        let currentSection = "";
-        sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-            if(window.pageYOffset >= sectionTop - sectionHeight / 3){
-                currentSection = section.getAttribute("id");
-            }
+        this.style.color='white';
+        const targetSectionId = this.getAttribute('href');
+        DocumentTimeline.querySelector(targetSectionId).scrollIntoView({
+            behavior: 'smooth'
         });
-        removeActiveClasses();
-        addActiveClass(currentSection);
+        event.preventDefault();
     });
 });
