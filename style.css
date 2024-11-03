@@ -18,12 +18,8 @@ body {
 div {
     display: block;
 }
-header{
-    margin-top: 70px;
-}
-section{
-    padding-top: 20px;
-}
+
+
 /***********************
         Navigation 
 ************************/
@@ -34,20 +30,8 @@ section{
 #myContent{
     padding-right: 2rem;
 }
-<<<<<<< Updated upstream
 
 
-=======
-.nav-link{
-    color:grey;
-}
-.nav-link.active{
-    color: blue;
-}
-.navbar{
-    height:70px;
-}
->>>>>>> Stashed changes
 /***********************
         Cover 
 ************************/
