@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function(){ //브라우저에서 H
             }
         });
         navLinks.forEach((link) => {
-            link.classList.remove("active");
             link.style.color = "grey";
         });
         if(currentSection){
